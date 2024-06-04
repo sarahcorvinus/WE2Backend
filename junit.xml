@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="196" failures="0" errors="0" time="129.123">
+  <testsuite name="eintrag.auth.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:52:45" time="13.385" tests="13">
+    <testcase classname=" /api/eintrag/:id get mit Login (Positivfall)     requester is ersteller of prot &amp;&amp; entry" name=" /api/eintrag/:id get mit Login (Positivfall)     requester is ersteller of prot &amp;&amp; entry" time="0.422">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id get mit Login (Positivfall)     requester is ersteller of entry only" name=" /api/eintrag/:id get mit Login (Positivfall)     requester is ersteller of entry only" time="0.305">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id get mit Login (Positivfall)     requester is ersteller of prot only" name=" /api/eintrag/:id get mit Login (Positivfall)     requester is ersteller of prot only" time="0.339">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id get mit Login (Negativfall)     requester is neither ersteller of prot nor entry" name=" /api/eintrag/:id get mit Login (Negativfall)     requester is neither ersteller of prot nor entry" time="0.612">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id get mit Login (Positivfall, bc prot is public)     requester is neither ersteller of prot nor entry" name=" /api/eintrag/:id get mit Login (Positivfall, bc prot is public)     requester is neither ersteller of prot nor entry" time="1.289">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id POST, posting into a private prot only possible if I am the owner    Negativfall" name=" /api/eintrag/:id POST, posting into a private prot only possible if I am the owner    Negativfall" time="1.053">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id POST, posting into a private prot only possible if I am the owner    Positivfall" name=" /api/eintrag/:id POST, posting into a private prot only possible if I am the owner    Positivfall" time="1.024">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id POST, posting into a private prot only possible if I am the owner    Negativfall" name=" /api/eintrag/:id POST, posting into a private prot only possible if I am the owner    Negativfall" time="1.048">
+    </testcase>
+    <testcase classname=" /api/eintrag/:id PUT, can only change own entry (positive case)    requester owns entry, but not prot" name=" /api/eintrag/:id PUT, can only change own entry (positive case)    requester owns entry, but not prot" time="1.02">
+    </testcase>
+    <testcase classname=" eintrag delete, deletion of own entry, sb elses prot" name=" eintrag delete, deletion of own entry, sb elses prot" time="0.966">
+    </testcase>
+    <testcase classname=" eintrag delete, deletion of sb elses entry, sb elses prot" name=" eintrag delete, deletion of sb elses entry, sb elses prot" time="0.987">
+    </testcase>
+    <testcase classname=" eintrag delete, deletion of own entry, own prot" name=" eintrag delete, deletion of own entry, own prot" time="0.76">
+    </testcase>
+    <testcase classname=" eintrag delete, deletion of sb elses entry and prot" name=" eintrag delete, deletion of sb elses entry and prot" time="0.941">
+    </testcase>
+  </testsuite>
+  <testsuite name="protokoll.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:52:58" time="12.446" tests="22">
+    <testcase classname=" /api/protokoll/:id/eintrage get, 5 Einträge" name=" /api/protokoll/:id/eintrage get, 5 Einträge" time="0.384">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id/eintrage get, keine Einträge" name=" /api/protokoll/:id/eintrage get, keine Einträge" time="0.259">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id/eintrage get, falsche Protokoll-ID" name=" /api/protokoll/:id/eintrage get, falsche Protokoll-ID" time="0.285">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id get Protokoll" name=" /api/protokoll/:id get Protokoll" time="0.258">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id get Protokoll falsche ID" name=" /api/protokoll/:id get Protokoll falsche ID" time="0.266">
+    </testcase>
+    <testcase classname=" /api/protokoll/alle get" name=" /api/protokoll/alle get" time="0.283">
+    </testcase>
+    <testcase classname=" /api/protokoll/alle Leere DB" name=" /api/protokoll/alle Leere DB" time="0.261">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id delete (ohne Anmeldung)" name=" /api/protokoll/:id delete (ohne Anmeldung)" time="0.241">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id delete, can only delete own prots (negative test)" name=" /api/protokoll/:id delete, can only delete own prots (negative test)" time="0.966">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id delete, can only delete own prots (positive test)" name=" /api/protokoll/:id delete, can only delete own prots (positive test)" time="0.728">
+    </testcase>
+    <testcase classname=" /api/protokoll/:id delete falsche ID" name=" /api/protokoll/:id delete falsche ID" time="1.006">
+    </testcase>
+    <testcase classname=" /api/protokoll post a new Protokoll (mit Anmeldung, jmd anderes angemeldet als &apos;ersteller&apos;)" name=" /api/protokoll post a new Protokoll (mit Anmeldung, jmd anderes angemeldet als &apos;ersteller&apos;)" time="0.836">
+    </testcase>
+    <testcase classname=" /api/protokoll post a new Protokoll (mit Anmeldung, jmd anderes angemeldet als &apos;ersteller&apos;)" name=" /api/protokoll post a new Protokoll (mit Anmeldung, jmd anderes angemeldet als &apos;ersteller&apos;)" time="0.604">
+    </testcase>
+    <testcase classname=" /api/protokoll post a new Protokoll (ohne Anmeldung)" name=" /api/protokoll post a new Protokoll (ohne Anmeldung)" time="0.256">
+    </testcase>
+    <testcase classname=" /api/protokoll post fake ersteller ID (mit Anmeldung)" name=" /api/protokoll post fake ersteller ID (mit Anmeldung)" time="0.847">
+    </testcase>
+    <testcase classname=" /api/protokoll post fake ersteller ID (ohne Anmeldung)" name=" /api/protokoll post fake ersteller ID (ohne Anmeldung)" time="0.257">
+    </testcase>
+    <testcase classname=" /api/protokoll put update eines Protokolls, nicht angemeldet" name=" /api/protokoll put update eines Protokolls, nicht angemeldet" time="0.166">
+    </testcase>
+    <testcase classname=" /api/protokoll put update eines Protokolls, angemeldet" name=" /api/protokoll put update eines Protokolls, angemeldet" time="0.691">
+    </testcase>
+    <testcase classname=" /api/protokoll put update ID not the same" name=" /api/protokoll put update ID not the same" time="0.711">
+    </testcase>
+    <testcase classname=" /api/protokoll put update Protokoll not there, angemeldet" name=" /api/protokoll put update Protokoll not there, angemeldet" time="0.722">
+    </testcase>
+    <testcase classname=" /api/protokoll put update Protokoll not there, nicht angemeldet" name=" /api/protokoll put update Protokoll not there, nicht angemeldet" time="0.227">
+    </testcase>
+    <testcase classname=" /api/protokoll/alle PUT should return 404" name=" /api/protokoll/alle PUT should return 404" time="0.248">
+    </testcase>
+  </testsuite>
+  <testsuite name="protokoll.validation.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:11" time="12.624" tests="13">
+    <testcase classname=" /api/protokoll GET, ungültige ID" name=" /api/protokoll GET, ungültige ID" time="0.525">
+    </testcase>
+    <testcase classname=" /api/protokoll PUT, verschiedene ID (params und body)" name=" /api/protokoll PUT, verschiedene ID (params und body)" time="1.066">
+    </testcase>
+    <testcase classname=" /api/protokoll POST, invalid ersteller ID (mit Anmeldung)" name=" /api/protokoll POST, invalid ersteller ID (mit Anmeldung)" time="0.893">
+    </testcase>
+    <testcase classname=" /api/protokoll POST, invalid ersteller ID (ohne Anmeldung)" name=" /api/protokoll POST, invalid ersteller ID (ohne Anmeldung)" time="0.396">
+    </testcase>
+    <testcase classname=" /api/protokoll POST, name too long (mit Anmeldung)" name=" /api/protokoll POST, name too long (mit Anmeldung)" time="1.12">
+    </testcase>
+    <testcase classname=" /api/protokoll POST, name too long (ohne Anmeldung)" name=" /api/protokoll POST, name too long (ohne Anmeldung)" time="0.483">
+    </testcase>
+    <testcase classname=" /api/protokoll GET, invalid ID" name=" /api/protokoll GET, invalid ID" time="0.478">
+    </testcase>
+    <testcase classname=" /api/protokoll DELETE, invalid ID (ohne Anmeldung)" name=" /api/protokoll DELETE, invalid ID (ohne Anmeldung)" time="0.465">
+    </testcase>
+    <testcase classname=" /api/protokoll DELETE, invalid ID (mit Anmeldung)" name=" /api/protokoll DELETE, invalid ID (mit Anmeldung)" time="1.186">
+    </testcase>
+    <testcase classname=" /api/protokoll POST, ersteller is MongoID, but no pfleger with that ID in DB        (mit Anmeldung)" name=" /api/protokoll POST, ersteller is MongoID, but no pfleger with that ID in DB        (mit Anmeldung)" time="1.147">
+    </testcase>
+    <testcase classname=" /api/protokoll POST, ersteller is MongoID, but no pfleger with that ID in DB(ohne Anmeldung) " name=" /api/protokoll POST, ersteller is MongoID, but no pfleger with that ID in DB(ohne Anmeldung) " time="0.495">
+    </testcase>
+    <testcase classname=" POST, ersteller not existing (mit Anmeldung)" name=" POST, ersteller not existing (mit Anmeldung)" time="1.17">
+    </testcase>
+    <testcase classname=" POST, ersteller not existing (ohne Anmeldung)" name=" POST, ersteller not existing (ohne Anmeldung)" time="0.44">
+    </testcase>
+  </testsuite>
+  <testsuite name="PflegerService.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:23" time="10.37" tests="12">
+    <testcase classname=" getAllePfleger Test 1" name=" getAllePfleger Test 1" time="0.722">
+    </testcase>
+    <testcase classname=" getAllePfleger Test 2" name=" getAllePfleger Test 2" time="0.693">
+    </testcase>
+    <testcase classname=" getAllePfleger Test 3" name=" getAllePfleger Test 3" time="0.66">
+    </testcase>
+    <testcase classname=" createPfleger Test 1" name=" createPfleger Test 1" time="0.843">
+    </testcase>
+    <testcase classname=" createPfleger Test 2" name=" createPfleger Test 2" time="1.06">
+    </testcase>
+    <testcase classname=" updatePfleger Test 1" name=" updatePfleger Test 1" time="1.228">
+    </testcase>
+    <testcase classname=" updatePfleger Test 2" name=" updatePfleger Test 2" time="1.003">
+    </testcase>
+    <testcase classname=" updatePfleger Test 3" name=" updatePfleger Test 3" time="0.795">
+    </testcase>
+    <testcase classname=" updatePfleger Test 4" name=" updatePfleger Test 4" time="0.716">
+    </testcase>
+    <testcase classname=" deletePfleger Test 1" name=" deletePfleger Test 1" time="0.671">
+    </testcase>
+    <testcase classname=" deletePfleger Test 2" name=" deletePfleger Test 2" time="0.663">
+    </testcase>
+    <testcase classname=" updatePfleger test no ID" name=" updatePfleger test no ID" time="0.696">
+    </testcase>
+  </testsuite>
+  <testsuite name="pfleger.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:34" time="9.904" tests="11">
+    <testcase classname=" /api/pfleger/alle get Pfleger" name=" /api/pfleger/alle get Pfleger" time="1.044">
+    </testcase>
+    <testcase classname=" /api/pfleger/alle get empty DB" name=" /api/pfleger/alle get empty DB" time="0.74">
+    </testcase>
+    <testcase classname=" /api/pfleger/:id delete Pfleger" name=" /api/pfleger/:id delete Pfleger" time="0.843">
+    </testcase>
+    <testcase classname=" /api/pfleger/:id delete non-existent Pfleger" name=" /api/pfleger/:id delete non-existent Pfleger" time="0.89">
+    </testcase>
+    <testcase classname=" /api/pfleger create a new Pfleger" name=" /api/pfleger create a new Pfleger" time="0.876">
+    </testcase>
+    <testcase classname=" /api/pfleger create a new Pfleger, name missing" name=" /api/pfleger create a new Pfleger, name missing" time="0.525">
+    </testcase>
+    <testcase classname=" /api/pfleger PUT update a Pfleger" name=" /api/pfleger PUT update a Pfleger" time="0.673">
+    </testcase>
+    <testcase classname=" /api/pfleger PUT update ID not the same" name=" /api/pfleger PUT update ID not the same" time="0.684">
+    </testcase>
+    <testcase classname=" /api/pfleger PUT update ID not valid" name=" /api/pfleger PUT update ID not valid" time="0.573">
+    </testcase>
+    <testcase classname=" /api/pfleger/alle PUT should return 404" name=" /api/pfleger/alle PUT should return 404" time="0.225">
+    </testcase>
+    <testcase classname=" /api/pfleger/alle PUT should return 404" name=" /api/pfleger/alle PUT should return 404" time="0.189">
+    </testcase>
+  </testsuite>
+  <testsuite name="eintrag.validation.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:44" time="6.272" tests="10">
+    <testcase classname=" Eintrag GET, ID not MongoID" name=" Eintrag GET, ID not MongoID" time="0.283">
+    </testcase>
+    <testcase classname=" Eintrag POST" name=" Eintrag POST" time="0.696">
+    </testcase>
+    <testcase classname=" Eintrag PUT, id not the same" name=" Eintrag PUT, id not the same" time="0.596">
+    </testcase>
+    <testcase classname=" /api/eintrag DELETE, invalid ID" name=" /api/eintrag DELETE, invalid ID" time="0.576">
+    </testcase>
+    <testcase classname=" /api/eintrag PUT entry, ID same but not from an entry" name=" /api/eintrag PUT entry, ID same but not from an entry" time="0.6">
+    </testcase>
+    <testcase classname=" /api/eintrag POST entry, ersteller ID not from a Pfleger" name=" /api/eintrag POST entry, ersteller ID not from a Pfleger" time="0.514">
+    </testcase>
+    <testcase classname=" /api/eintrag POST, menge zu klein" name=" /api/eintrag POST, menge zu klein" time="0.554">
+    </testcase>
+    <testcase classname=" /api/eintrag POST, menge zu groß" name=" /api/eintrag POST, menge zu groß" time="0.496">
+    </testcase>
+    <testcase classname=" /api/eintrag PUT, menge zu klein" name=" /api/eintrag PUT, menge zu klein" time="0.457">
+    </testcase>
+    <testcase classname=" /api/eintrag PUT, menge zu groß" name=" /api/eintrag PUT, menge zu groß" time="0.49">
+    </testcase>
+  </testsuite>
+  <testsuite name="login.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:50" time="1.442" tests="1">
+    <testcase classname=" /api/login POST, Positivtest" name=" /api/login POST, Positivtest" time="0.626">
+    </testcase>
+  </testsuite>
+  <testsuite name="EintragService.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:52" time="5.26" tests="13">
+    <testcase classname=" getEintrag Test 1" name=" getEintrag Test 1" time="0.558">
+    </testcase>
+    <testcase classname=" getEintrag Test 2" name=" getEintrag Test 2" time="0.415">
+    </testcase>
+    <testcase classname=" getEintrag Test 3" name=" getEintrag Test 3" time="0.319">
+    </testcase>
+    <testcase classname=" getEintrag Test 4" name=" getEintrag Test 4" time="0.381">
+    </testcase>
+    <testcase classname=" createEintrag Test 1" name=" createEintrag Test 1" time="0.317">
+    </testcase>
+    <testcase classname=" createEintrag Test 2" name=" createEintrag Test 2" time="0.34">
+    </testcase>
+    <testcase classname=" createEintrag Test 3" name=" createEintrag Test 3" time="0.302">
+    </testcase>
+    <testcase classname=" createEintrag Test 4" name=" createEintrag Test 4" time="0.339">
+    </testcase>
+    <testcase classname=" updateEintrag Test 1" name=" updateEintrag Test 1" time="0.373">
+    </testcase>
+    <testcase classname=" updateEintrag Test 2" name=" updateEintrag Test 2" time="0.303">
+    </testcase>
+    <testcase classname=" updateEintrag Test 3" name=" updateEintrag Test 3" time="0.344">
+    </testcase>
+    <testcase classname=" updateEintrag Test 4" name=" updateEintrag Test 4" time="0.354">
+    </testcase>
+    <testcase classname=" updateEintrag Test 5" name=" updateEintrag Test 5" time="0.346">
+    </testcase>
+  </testsuite>
+  <testsuite name="eintrag.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:53:57" time="6.216" tests="9">
+    <testcase classname=" /api/eintrag get einen Eintrag holen" name=" /api/eintrag get einen Eintrag holen" time="0.353">
+    </testcase>
+    <testcase classname=" /api/eintrag get fake ID" name=" /api/eintrag get fake ID" time="0.249">
+    </testcase>
+    <testcase classname=" /api/eintrag POST a new entry (ohne Anmeldung)" name=" /api/eintrag POST a new entry (ohne Anmeldung)" time="0.235">
+    </testcase>
+    <testcase classname=" /api/eintrag POST a new entry (mit Anmeldung)" name=" /api/eintrag POST a new entry (mit Anmeldung)" time="0.783">
+    </testcase>
+    <testcase classname=" /api/eintrag POST a new entry, menge missing" name=" /api/eintrag POST a new entry, menge missing" time="0.665">
+    </testcase>
+    <testcase classname=" /api/eintrag PUT update of an entry" name=" /api/eintrag PUT update of an entry" time="0.665">
+    </testcase>
+    <testcase classname=" /api/eintrag PUT update non-matching ID" name=" /api/eintrag PUT update non-matching ID" time="0.437">
+    </testcase>
+    <testcase classname=" /api/eintrag DELETE of an entry" name=" /api/eintrag DELETE of an entry" time="0.598">
+    </testcase>
+    <testcase classname=" /api/eintrag DELETE of non-existent entry" name=" /api/eintrag DELETE of non-existent entry" time="0.721">
+    </testcase>
+  </testsuite>
+  <testsuite name="pfleger.validation.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:04" time="4.179" tests="5">
+    <testcase classname=" pflegerRouter DELETE fake ID" name=" pflegerRouter DELETE fake ID" time="0.683">
+    </testcase>
+    <testcase classname=" pflegerRouter POST name too long" name=" pflegerRouter POST name too long" time="0.474">
+    </testcase>
+    <testcase classname=" pflegerRouter PUT ID not same" name=" pflegerRouter PUT ID not same" time="0.43">
+    </testcase>
+    <testcase classname=" pflegerRouter Pfleger name already there" name=" pflegerRouter Pfleger name already there" time="0.865">
+    </testcase>
+    <testcase classname=" pflegerRouter POST, name already there" name=" pflegerRouter POST, name already there" time="0.816">
+    </testcase>
+  </testsuite>
+  <testsuite name="protokollPOST.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:08" time="4.949" tests="5">
+    <testcase classname=" POST should return ID (mit Anmeldung)" name=" POST should return ID (mit Anmeldung)" time="0.922">
+    </testcase>
+    <testcase classname=" POST should return ID (ohne Anmeldung)" name=" POST should return ID (ohne Anmeldung)" time="0.235">
+    </testcase>
+    <testcase classname=" GET and POST should return ID (mit Anmeldung)" name=" GET and POST should return ID (mit Anmeldung)" time="0.91">
+    </testcase>
+    <testcase classname=" GET and POST should return ID (ohne Anmeldung)" name=" GET and POST should return ID (ohne Anmeldung)" time="0.202">
+    </testcase>
+    <testcase classname=" createProtokoll should return ID" name=" createProtokoll should return ID" time="0.186">
+    </testcase>
+  </testsuite>
+  <testsuite name="ProtokollService.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:13" time="3.362" tests="14">
+    <testcase classname=" getProtokoll Test 1" name=" getProtokoll Test 1" time="0.195">
+    </testcase>
+    <testcase classname=" getProtokoll Test 2" name=" getProtokoll Test 2" time="0.197">
+    </testcase>
+    <testcase classname=" createProtokoll Test 1" name=" createProtokoll Test 1" time="0.229">
+    </testcase>
+    <testcase classname=" createProtokoll Test 2" name=" createProtokoll Test 2" time="0.239">
+    </testcase>
+    <testcase classname=" createProtokoll Test 3" name=" createProtokoll Test 3" time="0.247">
+    </testcase>
+    <testcase classname=" createProtokoll Test 4" name=" createProtokoll Test 4" time="0.258">
+    </testcase>
+    <testcase classname=" createProtokoll Test 5" name=" createProtokoll Test 5" time="0.263">
+    </testcase>
+    <testcase classname=" createProtokoll Test 6" name=" createProtokoll Test 6" time="0.247">
+    </testcase>
+    <testcase classname=" updateProtokoll Test 1" name=" updateProtokoll Test 1" time="0.269">
+    </testcase>
+    <testcase classname=" updateProtokoll Test 2" name=" updateProtokoll Test 2" time="0.178">
+    </testcase>
+    <testcase classname=" deleteProtokoll Test 1" name=" deleteProtokoll Test 1" time="0.165">
+    </testcase>
+    <testcase classname=" deleteProtokoll Test 2" name=" deleteProtokoll Test 2" time="0.166">
+    </testcase>
+    <testcase classname=" create Error" name=" create Error" time="0.167">
+    </testcase>
+    <testcase classname=" getProtokoll Menge" name=" getProtokoll Menge" time="0.174">
+    </testcase>
+  </testsuite>
+  <testsuite name="pfleger.auth.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:16" time="2.908" tests="3">
+    <testcase classname=" Pfleger can only be deleted by admin, negative case" name=" Pfleger can only be deleted by admin, negative case" time="0.728">
+    </testcase>
+    <testcase classname=" Pfleger can only be deleted by admin, positive case" name=" Pfleger can only be deleted by admin, positive case" time="0.8">
+    </testcase>
+    <testcase classname=" Pfleger can not be deleted by himself" name=" Pfleger can not be deleted by himself" time="0.659">
+    </testcase>
+  </testsuite>
+  <testsuite name="AuthenticationService.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:19" time="3.549" tests="5">
+    <testcase classname=" login admin correct pw" name=" login admin correct pw" time="0.669">
+    </testcase>
+    <testcase classname=" login admin wrong pw" name=" login admin wrong pw" time="0.631">
+    </testcase>
+    <testcase classname=" login user correct pw" name=" login user correct pw" time="0.608">
+    </testcase>
+    <testcase classname=" login user wrong pw" name=" login user wrong pw" time="0.64">
+    </testcase>
+    <testcase classname=" login non-existing user" name=" login non-existing user" time="0.399">
+    </testcase>
+  </testsuite>
+  <testsuite name="HashPassword.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:23" time="3.394" tests="6">
+    <testcase classname=" Test Hash pre-hook &apos;save&apos;" name=" Test Hash pre-hook &apos;save&apos;" time="0.432">
+    </testcase>
+    <testcase classname=" Test hashing pre hook updateOne" name=" Test hashing pre hook updateOne" time="0.578">
+    </testcase>
+    <testcase classname=" Test isCorrectPassword()" name=" Test isCorrectPassword()" time="0.434">
+    </testcase>
+    <testcase classname=" Test isCorrectPassword() 2" name=" Test isCorrectPassword() 2" time="0.424">
+    </testcase>
+    <testcase classname=" isCorrectPassword Error" name=" isCorrectPassword Error" time="0.465">
+    </testcase>
+    <testcase classname=" isCorrectPassword Error 2" name=" isCorrectPassword Error 2" time="0.645">
+    </testcase>
+  </testsuite>
+  <testsuite name="getAlleEintraege.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:26" time="3.287" tests="6">
+    <testcase classname=" getAlleEintraege Test 1" name=" getAlleEintraege Test 1" time="0.519">
+    </testcase>
+    <testcase classname=" getAlleEintraege Test 2" name=" getAlleEintraege Test 2" time="0.442">
+    </testcase>
+    <testcase classname=" getAlleEintraege Test 3" name=" getAlleEintraege Test 3" time="0.464">
+    </testcase>
+    <testcase classname=" getAlleEintraege Test 4" name=" getAlleEintraege Test 4" time="0.468">
+    </testcase>
+    <testcase classname=" getAlleEintraege Test 5" name=" getAlleEintraege Test 5" time="0.477">
+    </testcase>
+    <testcase classname=" getAlleEintraege Test 6" name=" getAlleEintraege Test 6" time="0.473">
+    </testcase>
+  </testsuite>
+  <testsuite name="getAlleProtokolle.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:30" time="3.048" tests="5">
+    <testcase classname=" getAlleProtokolle Test 1" name=" getAlleProtokolle Test 1" time="0.608">
+    </testcase>
+    <testcase classname=" getAlleProtokolle Test 2" name=" getAlleProtokolle Test 2" time="0.444">
+    </testcase>
+    <testcase classname=" getAlleProtokolle Test 3" name=" getAlleProtokolle Test 3" time="0.468">
+    </testcase>
+    <testcase classname=" getAlleProtokolle Test Erstellername" name=" getAlleProtokolle Test Erstellername" time="0.494">
+    </testcase>
+    <testcase classname=" getAlleProtokolle Test Gesamtmenge" name=" getAlleProtokolle Test Gesamtmenge" time="0.476">
+    </testcase>
+  </testsuite>
+  <testsuite name="protokoll.delete.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:33" time="1.945" tests="2">
+    <testcase classname=" /api/protokoll DELETE, Positivtest (mit Authentifizierung)" name=" /api/protokoll DELETE, Positivtest (mit Authentifizierung)" time="0.767">
+    </testcase>
+    <testcase classname=" /api/protokoll DELETE, Negativtest (ohne Authentifizierung)" name=" /api/protokoll DELETE, Negativtest (ohne Authentifizierung)" time="0.236">
+    </testcase>
+  </testsuite>
+  <testsuite name="createJWT.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:35" time="2.491" tests="5">
+    <testcase classname=" create JWT" name=" create JWT" time="0.503">
+    </testcase>
+    <testcase classname=" verifyJWT Test" name=" verifyJWT Test" time="0.395">
+    </testcase>
+    <testcase classname=" verifyPasswordAndCreateJWT test, password wrong" name=" verifyPasswordAndCreateJWT test, password wrong" time="0.457">
+    </testcase>
+    <testcase classname=" verifyPasswordAndCreateJWT test, non-existing Pfleger" name=" verifyPasswordAndCreateJWT test, non-existing Pfleger" time="0.23">
+    </testcase>
+    <testcase classname=" verifyPasswordAndCreateJWT test, JWT_SECRET not set" name=" verifyPasswordAndCreateJWT test, JWT_SECRET not set" time="0.462">
+    </testcase>
+  </testsuite>
+  <testsuite name="login.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:37" time="2.423" tests="3">
+    <testcase classname=" loginRouter POST test" name=" loginRouter POST test" time="0.727">
+    </testcase>
+    <testcase classname=" loginRouter POST test, false pw" name=" loginRouter POST test, false pw" time="0.43">
+    </testcase>
+    <testcase classname=" loginRouter POST test, non-existent name" name=" loginRouter POST test, non-existent name" time="0.25">
+    </testcase>
+  </testsuite>
+  <testsuite name="inkonsistentPOST.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:40" time="1.914" tests="2">
+    <testcase classname=" POST datePatientConstraint" name=" POST datePatientConstraint" time="0.762">
+    </testcase>
+    <testcase classname=" createProtokoll datePatientConstraint does work" name=" createProtokoll datePatientConstraint does work" time="0.235">
+    </testcase>
+  </testsuite>
+  <testsuite name="deletePfleger.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:42" time="1.892" tests="3">
+    <testcase classname=" deletePfleger deletes Protokolle belonging to Pfleger" name=" deletePfleger deletes Protokolle belonging to Pfleger" time="0.509">
+    </testcase>
+    <testcase classname=" deletePfleger deletes Eintraege belonging to Pfleger" name=" deletePfleger deletes Eintraege belonging to Pfleger" time="0.487">
+    </testcase>
+    <testcase classname=" deletePfleger deletes Eintraege belonging to Protokoll belonging to Pfleger" name=" deletePfleger deletes Eintraege belonging to Protokoll belonging to Pfleger" time="0.483">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteEintrag.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:44" time="1.601" tests="4">
+    <testcase classname=" deleteEintrag Test 1" name=" deleteEintrag Test 1" time="0.311">
+    </testcase>
+    <testcase classname=" deleteEintrag Test 2" name=" deleteEintrag Test 2" time="0.271">
+    </testcase>
+    <testcase classname=" deleteEintrag Test 3" name=" deleteEintrag Test 3" time="0.237">
+    </testcase>
+    <testcase classname=" deleteEintrag Test 4" name=" deleteEintrag Test 4" time="0.226">
+    </testcase>
+  </testsuite>
+  <testsuite name="https.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:46" time="1.485" tests="1">
+    <testcase classname=" https test" name=" https test" time="0.474">
+    </testcase>
+  </testsuite>
+  <testsuite name="ProtokollModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:47" time="1.168" tests="5">
+    <testcase classname=" Test Konstruktor ID &amp; date" name=" Test Konstruktor ID &amp; date" time="0.282">
+    </testcase>
+    <testcase classname=" Test Konstruktor invalid ID" name=" Test Konstruktor invalid ID" time="0.031">
+    </testcase>
+    <testcase classname=" Test Konstruktor forced invalid ID" name=" Test Konstruktor forced invalid ID" time="0.011">
+    </testcase>
+    <testcase classname=" updatedAt Test" name=" updatedAt Test" time="0.176">
+    </testcase>
+    <testcase classname=" delete Protokoll Test" name=" delete Protokoll Test" time="0.235">
+    </testcase>
+  </testsuite>
+  <testsuite name="PflegerModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:49" time="1.208" tests="2">
+    <testcase classname=" new Pfleger &apos;Erika&apos;" name=" new Pfleger &apos;Erika&apos;" time="0.214">
+    </testcase>
+    <testcase classname=" updateOne und findOne" name=" updateOne und findOne" time="0.448">
+    </testcase>
+  </testsuite>
+  <testsuite name="updateProtokoll.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:50" time="0.665" tests="1">
+    <testcase classname=" update Error" name=" update Error" time="0.293">
+    </testcase>
+  </testsuite>
+  <testsuite name="deleteProtokoll.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:51" time="0.829" tests="2">
+    <testcase classname=" deleteProtokoll deletes Eintraege belonging to Protokoll" name=" deleteProtokoll deletes Eintraege belonging to Protokoll" time="0.235">
+    </testcase>
+    <testcase classname=" deleteProtokoll doesn&apos;t delete Eintraege not belonging to Protokoll" name=" deleteProtokoll doesn&apos;t delete Eintraege not belonging to Protokoll" time="0.218">
+    </testcase>
+  </testsuite>
+  <testsuite name="EintragModel.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:52" time="0.673" tests="1">
+    <testcase classname=" Eintrag Test" name=" Eintrag Test" time="0.263">
+    </testcase>
+  </testsuite>
+  <testsuite name="jestExtended.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:52" time="0.759" tests="7">
+    <testcase classname=" Jest toMatchObject" name=" Jest toMatchObject" time="0.005">
+    </testcase>
+    <testcase classname=" XJest toIncludeAllMembers" name=" XJest toIncludeAllMembers" time="0.006">
+    </testcase>
+    <testcase classname=" XJest toIncludeAllPartialMembers" name=" XJest toIncludeAllPartialMembers" time="0.005">
+    </testcase>
+    <testcase classname=" XJest toIncludeAnyMembers" name=" XJest toIncludeAnyMembers" time="0.006">
+    </testcase>
+    <testcase classname=" XJest toIncludeSameMembers" name=" XJest toIncludeSameMembers" time="0.004">
+    </testcase>
+    <testcase classname=" XJest toPartiallyContain" name=" XJest toPartiallyContain" time="0.001">
+    </testcase>
+    <testcase classname=" Jest toMatchObject" name=" Jest toMatchObject" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="ServiceHelper.test.ts" errors="0" failures="0" skipped="0" timestamp="2023-12-25T09:54:53" time="0.442" tests="5">
+    <testcase classname=" dateToString zweistellig" name=" dateToString zweistellig" time="0.003">
+    </testcase>
+    <testcase classname=" dateToString einstellig" name=" dateToString einstellig" time="0.001">
+    </testcase>
+    <testcase classname=" stringToDate zweistellig" name=" stringToDate zweistellig" time="0.001">
+    </testcase>
+    <testcase classname=" stringToDate einstellig mit Null" name=" stringToDate einstellig mit Null" time="0.001">
+    </testcase>
+    <testcase classname=" stringToDate einstellig ohne Null" name=" stringToDate einstellig ohne Null" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
